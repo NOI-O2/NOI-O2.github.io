@@ -13,6 +13,8 @@ on:
 
 jobs:
   build:
+    permissions:
+      contents: write  # 关键：赋予写入仓库内容的权限，允许推送分支
     runs-on: ubuntu-latest
     env:
       REPO_URL: "NOI-O2/NOI-O2.github.io"  # 远程仓库的 URL
